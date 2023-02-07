@@ -1,18 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import heroImage from "../../public/rahul_transparent_crop.png";
 
 const HeroSection = () => {
   return (
     <section className="md:flex md:flex-row-reverse max-w-7xl px-4 mt-6">
       <div className="md:mt-2 md:w-1/2 text-center grid place-content-center">
         <div className="bg-teal-600 rounded-tl-[999px]">
-          <Image
-            src="/rahul_transparent_crop.png"
-            alt=""
-            width={325}
-            height={325}
-            className=""
-          />
+          <Image src={heroImage} alt="" width={325} height={325} />
         </div>
       </div>
       <div className="mt-8 md:mt-16 md:w-1/2 text-center space-y-4">
