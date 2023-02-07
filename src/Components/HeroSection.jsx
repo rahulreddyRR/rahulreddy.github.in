@@ -5,13 +5,15 @@ const HeroSection = () => {
   return (
     <section className="md:flex md:flex-row-reverse max-w-7xl px-4 mt-6">
       <div className="md:mt-2 md:w-1/2 text-center grid place-content-center">
-        <Image
-          src="/rahul_transparent_crop.png"
-          alt=""
-          width={325}
-          height={325}
-          className=""
-        />
+        <div className="bg-teal-600 rounded-tl-[999px]">
+          <Image
+            src="/rahul_transparent_crop.png"
+            alt=""
+            width={325}
+            height={325}
+            className=""
+          />
+        </div>
       </div>
       <div className="mt-8 md:mt-16 md:w-1/2 text-center space-y-4">
         <h1 className="font-bold text-4xl">Hello! My Name is</h1>
