@@ -20,7 +20,7 @@ const NAV_ITEMS = [
 const NavBar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   return (
-    <nav className="fixed w-full mx-auto align-baseline px-3 py-4 shadow bg-white">
+    <nav className="sticky w-full mx-auto align-baseline px-3 py-4 shadow bg-white">
       <div className="justify-between md:items-center md:flex">
         <div className="flex justify-between">
           <div className="p-2 flex text-2xl gap-1">
