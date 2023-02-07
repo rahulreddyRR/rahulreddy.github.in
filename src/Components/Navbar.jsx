@@ -1,21 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-
-const NAV_ITEMS = [
-  {
-    label: "Home",
-    page: "home",
-  },
-  {
-    label: "About",
-    page: "about",
-  },
-  {
-    label: "Projects",
-    page: "projects",
-  },
-];
+import { NAV_ITEMS } from "@/Constent/Constents";
 
 const NavBar = () => {
   const [mobileNav, setMobileNav] = useState(false);
