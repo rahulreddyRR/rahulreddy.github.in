@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import heroImage from "../../public/rahul_transparent_crop.png";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -22,6 +24,27 @@ const HeroSection = () => {
           based in Bangalore, India. Working towards creating software that
           makes life easier and more meaningful.
         </p>
+        <div>
+          <div className="flex justify-center items-center gap-2 mt-8">
+            <a href="https://www.google.com" target={"_blank"} rel="noreferrer">
+              <IoLogoGithub size={40} color="#171515" />
+            </a>
+            <a href="https://www.google.com" target={"_blank"} rel="noreferrer">
+              <IoLogoLinkedin size={45} color="#0A66C2" />
+            </a>
+            <Link
+              href="projects"
+              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );
