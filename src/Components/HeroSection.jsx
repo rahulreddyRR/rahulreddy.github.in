@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import heroImage from "../../public/rahul_transparent_crop.png";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import Link from "next/link";
+import { My_Github_url, My_Linked_url } from "@/Constent/Constents";
 
 const HeroSection = () => {
   return (
-    <section className="md:flex md:flex-row-reverse max-w-7xl px-4 mt-6">
+    <section className="md:flex w-full md:flex-row-reverse px-4 mt-6">
       <div className="md:mt-2 md:w-1/2 text-center grid place-content-center">
         <div className="bg-teal-600 rounded-tl-[999px]">
           <Image src={heroImage} alt="" width={325} height={325} />
@@ -22,6 +25,27 @@ const HeroSection = () => {
           based in Bangalore, India. Working towards creating software that
           makes life easier and more meaningful.
         </p>
+        <div>
+          <div className="flex justify-center items-center gap-2 mt-8">
+            <a href={My_Github_url} target={"_blank"} rel="noreferrer">
+              <IoLogoGithub size={40} color="#171515" />
+            </a>
+            <a href={My_Linked_url} target={"_blank"} rel="noreferrer">
+              <IoLogoLinkedin size={45} color="#0A66C2" />
+            </a>
+            <Link
+              href="projects"
+              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );
