@@ -19,7 +19,7 @@ const ProjectsSection = () => {
           </span>
           <hr className="w-1 h-8 mx-auto my-4 bg-teal-500 border-0 rounded sm:hidden" />
 
-          <div className="inline-block sm:flex">
+          <div className="inline-block sm:flex gap-4">
             <IoLogoGithub size={25} />
             <IoLogoInstagram size={25} />
             <IoLogoLinkedin size={25} />
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
           {Projects_Deatils.map((project, idx) => {
             return (
               <div
-                className="bg-teal-500 rounded-md text-base text-white p-2"
+                className="bg-teal-600 rounded-md text-base text-white p-2"
                 key={idx}
               >
                 <h3 className="text-center font-bold text-lg">
