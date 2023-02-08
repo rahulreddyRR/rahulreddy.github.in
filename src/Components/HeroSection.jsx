@@ -3,7 +3,6 @@ import Image from "next/image";
 import heroImage from "../../public/rahul_transparent_crop.png";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { GoLinkExternal } from "react-icons/go";
-import Link from "next/link";
 import { My_Github_url, My_Linked_url } from "@/Constent/Constents";
 
 const HeroSection = () => {
