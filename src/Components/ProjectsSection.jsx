@@ -31,13 +31,11 @@ const ProjectsSection = () => {
           {Projects_Deatils.map((project, idx) => {
             return (
               <div
-                className="bg-teal-600 rounded-md text-base text-white p-2"
+                className="bg-teal-600 rounded-md text-base text-white p-2 text-center"
                 key={idx}
               >
-                <h3 className="text-center font-bold text-lg">
-                  {project.project_name}
-                </h3>
-                <span className="text-left">{project.project_Desc}</span>
+                <h3 className="font-bold text-lg">{project.project_name}</h3>
+                <span>{project.project_Desc}</span>
               </div>
             );
           })}
