@@ -11,7 +11,7 @@ const ProjectsSection = () => {
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
       </div>
-      <div className="flex md:flex-col-reverse gap-2 ">
+      <div className="flex md:flex-col-reverse gap-2 max-w-7xl m-auto">
         <div className="flex-root sm:flex sm:justify-between sm:my-4">
           <hr className="w-1 h-10 mx-auto my-4 bg-teal-500 border-0 rounded sm:hidden" />
           <span className="[writing-mode:vertical-lr] sm:[writing-mode:rl-tb] align-baseline">
