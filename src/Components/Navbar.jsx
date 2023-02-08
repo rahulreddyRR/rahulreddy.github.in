@@ -6,7 +6,7 @@ import { NAV_ITEMS } from "@/Constent/Constents";
 const NavBar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   return (
-    <nav className="sticky w-full sm:px-20 mx-auto align-baseline px-3 py-4 shadow bg-white">
+    <nav className="sticky w-full sm:px-20 mx-auto align-baseline px-3 py-4 shadow-sm">
       <div className="justify-between md:items-center md:flex">
         <div className="flex justify-between">
           <div className="p-2 flex text-2xl gap-1">

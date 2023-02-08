@@ -1,6 +1,7 @@
 import AboutMyself from "./AboutMyself";
 import HeroSection from "./HeroSection";
 import NavBar from "./Navbar";
+import ProjectsSection from "./ProjectsSection";
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
       <NavBar />
       <HeroSection />
       <AboutMyself />
+      <ProjectsSection />
     </div>
   );
 };
