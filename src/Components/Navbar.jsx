@@ -1,9 +1,14 @@
-import Link from "next/link";
+// import Link from "next/link";
+// import { NAV_ITEMS } from "@/Constent/Constents";
+
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { NAV_ITEMS } from "@/Constent/Constents";
+import { RiMoonFill, RiSunLine } from "react-icons/ri";
+import { useTheme } from "next-themes";
 
 const NavBar = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const [mobileNav, setMobileNav] = useState(false);
   return (
     <nav className="sticky w-full sm:px-20 mx-auto align-baseline px-3 py-4 shadow-sm">
@@ -28,7 +33,7 @@ const NavBar = () => {
             mobileNav ? "block" : "hidden"
           } mt-4 md:mt-0`}
         >
-          <div className="flex flex-col md:flex-row md:items-center gap-4">
+          {/* <div className="flex flex-col md:flex-row md:items-center gap-4">
             {NAV_ITEMS.map((item, idx) => {
               return (
                 <Link
@@ -48,7 +53,22 @@ const NavBar = () => {
                 </Link>
               );
             })}
-          </div>
+          </div> */}
+          {currentTheme === "dark" ? (
+            <button
+              onClick={() => setTheme("light")}
+              className="bg-slate-100 p-2 rounded-xl"
+            >
+              <RiSunLine size={25} color="black" />
+            </button>
+          ) : (
+            <button
+              onClick={() => setTheme("dark")}
+              className="bg-slate-100 p-2 rounded-xl"
+            >
+              <RiMoonFill size={25} />
+            </button>
+          )}
         </div>
       </div>
     </nav>
