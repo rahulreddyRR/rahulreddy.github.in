@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import heroImage from "../../public/rahul_transparent_crop.png";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { GoLinkExternal } from "react-icons/go";
 import Link from "next/link";
 import { My_Github_url, My_Linked_url } from "@/Constent/Constents";
 
@@ -33,17 +34,14 @@ const HeroSection = () => {
             <a href={My_Linked_url} target={"_blank"} rel="noreferrer">
               <IoLogoLinkedin size={45} color="#0A66C2" />
             </a>
-            <Link
-              href="projects"
-              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <a
+              href="https://github.com/rahulreddyRR/rahulreddyRR/blob/main/Resume.pdf"
+              className="flex items-center text-neutral-100 font-semibold px-2 py-2 bg-teal-600 rounded shadow hover:bg-teal-700"
+              target="_blank"
+              rel="noreferrer"
             >
-              Projects
-            </Link>
+              Download CV &nbsp; <GoLinkExternal size={20} color="#FFFFFF" />
+            </a>
           </div>
         </div>
       </div>
