@@ -33,7 +33,7 @@ const AboutMyself = () => {
           <SkillsSections skills={Current_skills} title="My Skills" />
           <SkillsSections
             skills={Current_Learning_skills}
-            title="Learning in 2023"
+            title="Learning in 2024"
           />
         </div>
       </div>
