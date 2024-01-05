@@ -28,6 +28,10 @@ export const Current_Learning_skills = [
 ];
 
 export const Projects_Deatils = [
+   {
+    project_name: "UNow",
+    project_Desc: "With Unow VN, you will have easy access to more than 200 popular and specialized hot-selling items for grocery businesses, restaurant and hotel channels from Unilever's outstanding brands.",
+  },
   {
     project_name: "Gro 24/7",
     project_Desc: "Gro 24/7 is B2B project between for reatilers.",
