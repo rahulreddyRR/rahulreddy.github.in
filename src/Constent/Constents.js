@@ -15,6 +15,7 @@ export const Current_skills = [
   { skill: "JavaScript" },
   { skill: "TypeScript" },
   { skill: "React" },
+  { skill: "React Native" },
   { skill: "Graphql" },
   { skill: "Bootstrap" },
   { skill: "Gitlabs" },
@@ -24,7 +25,6 @@ export const Current_Learning_skills = [
   { skill: "Spring Boot" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
-  { skill: "React Native" },
 ];
 
 export const Projects_Deatils = [
